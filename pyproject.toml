@@ -1,0 +1,25 @@
+[project]
+name = "lab-imbalanced"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jan Noel Vero", email = "jannoel.vero@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "imbalanced-learn>=0.14.2",
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+]
+
+[project.scripts]
+lab-imbalanced = "lab_imbalanced:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
